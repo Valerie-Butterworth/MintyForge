@@ -10,10 +10,10 @@ contract MintyPrinter is ERC721URIStorage, Ownable {
     // tokenCounters keeps track of NFTs printed. 256 is EVM's word byte size.
     uint256 public tokenCounter;
 
-    constructor() ERC721("MintyPrinter", "MP") {
-        tokenCounter = 0;
-    }
-
+    constructor(address initialOwner) ERC721("MintyPrinter", "MP") Ownable(initialOwner) {
+            tokenCounter = 0;
+        }
+        
     /*
         * This creates a new token,
         * sets it to the current counter as an ID,
