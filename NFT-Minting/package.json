@@ -1,0 +1,27 @@
+{
+  "name": "nft-minting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.5"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.7.2",
+    "@openzeppelin/contracts": "^5.0.2",
+    "eth-gas-reporter": "^0.2.27",
+    "ethers": "^6.13.1",
+    "npm-force-resolutions": "^0.0.10",
+    "ws": "^8.17.1"
+  },
+  "resolutions": {
+    "ws": "7.5.10"
+  }
+}
