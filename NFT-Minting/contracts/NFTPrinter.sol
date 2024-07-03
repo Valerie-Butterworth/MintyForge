@@ -10,6 +10,7 @@ contract MintyPrinter is ERC721URIStorage, Ownable {
     // tokenCounters keeps track of NFTs printed. 256 is EVM's word byte size.
     uint256 public tokenCounter;
 
+    // Sets the initial owner of the contract.
     constructor(address initialOwner) ERC721("MintyPrinter", "MP") Ownable(initialOwner) {
             tokenCounter = 0;
         }
